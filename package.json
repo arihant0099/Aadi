@@ -17,7 +17,6 @@
     "framer-motion": "^10.12.18",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
-    "node-sass": "^7.0.3",
     "rc-rate": "^2.12.0",
     "rc-slider": "^10.2.1",
     "react": "^18.2.0",
@@ -63,5 +62,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
   }
 }
