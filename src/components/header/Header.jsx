@@ -42,7 +42,7 @@ const Header = () => {
         </span>
     );
   return (
-    <header>
+    <header className='sticky top-0 z-50'>
         <div className={styles.header}>
             {logo}
             <nav className={showMenu ? `${styles["show-nav"]}` : `${styles["hide-nav"]}`}>
@@ -62,12 +62,12 @@ const Header = () => {
                 </ul>
             <div className={styles["header-right"]}>
                 <span className={styles.links}>
-                    <NavLink to={"login"} className={activeLink}>
+                    <NavLink to="/Login" className={activeLink}>
                         Login
                     </NavLink>
                 </span>
                 <span className={styles.links}>
-                    <NavLink to={"register"} className={activeLink}>
+                    <NavLink to="/Signup" className={activeLink}>
                         Register
                     </NavLink>
                 </span>
@@ -80,12 +80,11 @@ const Header = () => {
             </div>
             </nav>
             <div className={styles["menu-icon"]}>
-                {cart}
                 <IoMenu size={28} onClick={toggleMenu}/>
             </div>
         </div>
     </header>
   );
-}
+};
 
 export default Header;
